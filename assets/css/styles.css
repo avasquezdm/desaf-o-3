@@ -1,0 +1,79 @@
+* {
+    font-family: 'Nirmala UI';
+    margin: 0;
+}
+
+h2 {
+    margin: 1em 0.5em;
+}
+
+span span {
+    color: gray;
+}
+.container {
+    display:grid;
+    grid-template-areas: 
+    'a a'
+    'b c'
+    'd d'; 
+    height: 100vh;
+    grid-template-rows: 8fr 84fr 8fr;
+    grid-template-columns: 2fr 8fr;
+}
+
+.header {
+    grid-area: a;
+    text-align: center;
+    background-color: #F7C8E0;
+    display:flex;
+    align-items: center;
+    justify-content: center
+}
+.categories {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    background-color: #DFFFD8;
+}
+.products {
+    grid-area: c;
+    background-color: #DFFFD8;
+    padding: 1em;
+}
+.footer {
+    grid-area: d;
+    text-align: center;
+    background-color: #F7C8E0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-grid {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.flex-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B4E4FF;
+}
+
+img {
+    margin-top: 0.8em;
+    height: 15em;
+}
+
+button {
+    width: 100%;
+    background-color: #95BDFF;
+    border: 0px;
+    padding: 0.5em 0em;
+    font-size: 1.05em;
+}
